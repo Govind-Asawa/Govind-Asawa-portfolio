@@ -1,5 +1,4 @@
-import { IoIosArrowRoundForward } from 'react-icons/io';
-import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaInstagram, FaQuora } from 'react-icons/fa';
 
 import heroImg from '../assets/heroImg_grayBG.png';
 
@@ -28,16 +27,18 @@ export default function Home() {
           building innovative solutions. I thrive on solving complex problems to create cutting-edge applications.
         </p>
       </div>
-      <button className='group flex gap-2 w-fit cursor-pointer px-4 py-2 border-white-500 border rounded-full hover:bg-white hover:text-black hover:font-medium transition-all duration-100 ease-in-out '>
-        <span className='uppercase'>Hire me</span>
-        <IoIosArrowRoundForward className='w-6 h-6 group-hover:rotate-90 duration-100' />
-      </button>
-      <div className='flex gap-2'>
+      <div className='flex gap-2 mt-8'>
         <a href='https://www.linkedin.com/in/govind-asawa/' target='_blank'>
-          <FaLinkedin className='w-6 h-6' />
+          <FaLinkedin className='w-6 h-6 md:w-8 md:h-8' />
         </a>
         <a href='https://github.com/Govind-Asawa' target='_blank'>
-          <FaGithub className='w-6 h-6' />
+          <FaGithub className='w-6 h-6 md:w-8 md:h-8' />
+        </a>
+        <a href='https://www.instagram.com/__govind_asawa__' target='_blank'>
+          <FaInstagram className='w-6 h-6 md:w-8 md:h-8' />
+        </a>
+        <a href='https://www.quora.com/profile/Govind-Asawa-4' target='_blank'>
+          <FaQuora className='w-6 h-6 md:w-8 md:h-8' />
         </a>
       </div>
     </div>
