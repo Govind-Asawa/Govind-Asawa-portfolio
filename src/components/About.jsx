@@ -24,6 +24,9 @@ export default function About() {
                 <p className='text-md capitalize text-gray-500'>
                   software engineer
                 </p>
+                <p className='text-sm capitalize text-gray-500'>
+                  MS CS @ University of North Texas '2025 
+                </p>
               </div>
               <div className='w-full grid grid-cols-1 grid-flow-row justify-items-start sm:grid-cols-2 sm:gap-x-8 h-fit p-2'>
                 <AboutItem tag='First name' value='govind' />
@@ -41,7 +44,7 @@ export default function About() {
                 <AboutItem tag='Address' value='Denton, Texas' />
                 <AboutItem tag='Languages' value='English, Hindi, Telugu' />
               </div>
-              <div className='flex justify-center sm:justify-start flex-wrap gap-4 mt-4 font-light'>
+              <div className='flex justify-center sm:justify-start flex-wrap gap-4 mt-2 font-light'>
                 <div className='group p-[0.1rem] bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 rounded-full'>
                   <a
                     href='https://drive.google.com/file/d/1Boxp2r19OiWXlWwG-9mc0RvLz3X0eHH5/view?usp=drive_link'

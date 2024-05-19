@@ -9,7 +9,7 @@ const links = [
     id: '#',
   },
   {
-    name: 'skills',
+    name: 'about',
     id: '#',
   },
   {
@@ -18,10 +18,6 @@ const links = [
   },
   {
     name: 'experience',
-    id: '#',
-  },
-  {
-    name: 'education',
     id: '#',
   },
   {

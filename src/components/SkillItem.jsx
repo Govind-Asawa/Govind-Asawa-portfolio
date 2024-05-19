@@ -12,7 +12,7 @@ export default function SkillItem({key, skillname, percent}) {
       <ProgressBar
         completed={percent}
         className='w-full'
-        height='10px'
+        height='6px'
         isLabelVisible={false}
       />
     </div>
