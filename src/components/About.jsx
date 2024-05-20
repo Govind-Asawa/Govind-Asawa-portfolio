@@ -7,7 +7,7 @@ import {SKILLS} from '../constants'
 
 export default function About() {
   return (
-    <section className='section-padding bg-black text-white' id='about'>
+    <section className='section-padding bg-black text-white border-b border-neutral-800' id='about'>
       <div className='flex flex-col px-2 md:px-10'>
         <div className='flex justify-start sm:justify-center items-start'>
           <div className='flex flex-1 justify-start gap-4'>

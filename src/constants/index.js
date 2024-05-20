@@ -63,4 +63,31 @@ export const SKILLS = [
         name: 'AWS(S3,lambda)',
         percent: '80'
     },
-]
+];
+
+export const EXPERIENCES = [
+    {
+      year: "Oct 2022 - Aug 2023",
+      role: "Software Engineer",
+      company: "Opentext Technologies",
+      location: 'India',
+      description: `Enhanced Content Hub for Publishers - a distributed web application by fixing 200+ bugs & adding 15+ new features over 2 years, contributing towards 133% revenue bump. `,
+      technologies: ["Javascript", "Java", "Solr", "AWS", "HTML/CSS", "Shell scripting"],
+    },
+    {
+      year: "Jan 2021 - Sept 2022",
+      role: "Associate Software engineer",
+      company: "Opentext Technologies",
+      location: 'India',
+      description: `Worked closely with security and testing teams to ensure successfull product release & documentation.`,
+      technologies: ["Javascript", "Java", "HTML/CSS", "Shell scripting"],
+    },
+    {
+      year: "Oct 2020 - Dec 2020",
+      role: "Software Engineer Intern",
+      company: "Opentext Technologies",
+      location: 'India',
+      description: `Built a Java solution to parse an XML files and store relevant data as CSV, automating ~80% of the process.`,
+      technologies: ["Java"],
+    }
+  ];
