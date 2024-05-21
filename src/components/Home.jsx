@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { Link } from 'react-scroll';
 
 import { FaLinkedin, FaGithub, FaInstagram, FaQuora } from 'react-icons/fa';
 import { RiArrowDownWideLine } from 'react-icons/ri';
@@ -75,14 +76,16 @@ export default function Home() {
           <FaQuora className='w-6 h-6 md:w-8 md:h-8' />
         </a>
       </div>
-      <motion.p
+      <motion.div
         initial={{ y: 20 }}
         animate={{ y: 0 }}
         transition={{ duration: 1, repeat: Infinity, repeatType: 'reverse' }}
         className='cursor-pointer'
       >
-        <RiArrowDownWideLine className='w-8 h-8' />
-      </motion.p>
+        <Link to='about' smooth duration={500} offset={-50}>
+          <RiArrowDownWideLine className='w-8 h-8' />
+        </Link>
+      </motion.div>
     </div>
   );
 }

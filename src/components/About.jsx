@@ -18,7 +18,7 @@ export default function About() {
             <motion.img
               whileInView={{ opacity: 1, x: 0 }}
               initial={{ opacity: 0, x: -100 }}
-              transition={{ duration: 0.5, delay: 0.5 }}
+              transition={{ duration: 0.5 }}
               src={aboutImg}
               alt='about profile'
               className='hidden md:flex md:w-1/5 md:h-1/5 rounded-md opacity-70'
@@ -27,7 +27,7 @@ export default function About() {
               <motion.div
                 whileInView={{ opacity: 1, x: 0 }}
                 initial={{ opacity: 0, x: 100 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
+                transition={{ duration: 0.5 }}
                 className='flex flex-col gap-2 border-b border-gray-600 pb-3'
               >
                 <h3 className='text-2xl font-light tracking-tight capitalize'>
@@ -43,7 +43,7 @@ export default function About() {
               <motion.div
                 whileInView={{ opacity: 1, x: 0 }}
                 initial={{ opacity: 0, x: 100 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
+                transition={{ duration: 0.5 }}
                 className='w-full grid grid-cols-1 grid-flow-row justify-items-start sm:grid-cols-2 sm:gap-x-8 h-fit p-2'
               >
                 <AboutItem tag='First name' value='govind' />
@@ -64,7 +64,7 @@ export default function About() {
               <motion.div
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: 100 }}
-                transition={{ duration: 0.5, delay: 0.5 }}
+                transition={{ duration: 0.5 }}
                 className='flex justify-center md:justify-start flex-wrap gap-4 mt-2 font-light'
               >
                 <div className='group p-[0.1rem] bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 rounded-full'>

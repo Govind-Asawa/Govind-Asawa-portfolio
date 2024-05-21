@@ -6,19 +6,19 @@ import { useState } from 'react';
 const links = [
   {
     name: 'home',
-    id: '#',
+    id: 'home',
   },
   {
     name: 'about',
-    id: '#',
+    id: 'about',
   },
   {
     name: 'projects',
-    id: '#',
+    id: 'projects',
   },
   {
     name: 'experience',
-    id: '#',
+    id: 'experience',
   },
   {
     name: 'contact',
@@ -38,6 +38,9 @@ export default function Navbar() {
           return (
             <Link
               key={i}
+              smooth
+              duration={500}
+              offset={-50}
               activeClass='text-white'
               to={ele.id}
               className='hover:text-white transition-all ease-in-out duration-100 cursor-pointer'
@@ -59,6 +62,8 @@ export default function Navbar() {
             return (
               <Link
                 key={i}
+                smooth
+                duration={500}
                 to={ele.id}
                 className='flex items-center justify-center px-2 w-full py-1 text-gray-400 hover:text-white transition-all ease-in-out duration-100 rounded-full cursor-pointer'
               >
