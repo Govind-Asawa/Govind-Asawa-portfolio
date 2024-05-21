@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion';
 import { EXPERIENCES } from '../constants';
 
 export default function Experience() {
@@ -7,15 +8,32 @@ export default function Experience() {
       id='experience'
     >
       <div className='px-2 md:px-10'>
-        <h2 className='capitalize text-2xl text-center mb-20'>Experience</h2>
+        <motion.h2
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: -100 }}
+          transition={{ duration: 1.5 }}
+          className='capitalize text-2xl text-center mb-20'
+        >
+          Experience
+        </motion.h2>
         <div>
           {EXPERIENCES.map((exp, idx) => {
             return (
               <div key={idx} className='mb-8 flex flex-wrap md:justify-center'>
-                <div className='w-full md:w-1/4'>
+                <motion.div
+                  whileInView={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0, x: -100 }}
+                  transition={{ duration: 0.5 }}
+                  className='w-full md:w-1/4'
+                >
                   <p className='mb-2 text-sm text-neutral-400'>{exp.year}</p>
-                </div>
-                <div className='w-full max-w-xl md:w-3/4'>
+                </motion.div>
+                <motion.div
+                  whileInView={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0, x: 100 }}
+                  transition={{ duration: 0.5 }}
+                  className='w-full max-w-xl md:w-3/4'
+                >
                   <h6 className='capitalize mb-2 font-semibold'>
                     {exp.role} -
                     <span className='ml-1 text-sm text-purple-200'>
@@ -38,7 +56,7 @@ export default function Experience() {
                       );
                     })}
                   </div>
-                </div>
+                </motion.div>
               </div>
             );
           })}

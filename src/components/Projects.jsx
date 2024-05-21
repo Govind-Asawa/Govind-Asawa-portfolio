@@ -1,4 +1,5 @@
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { motion } from 'framer-motion';
+import { FaExternalLinkAlt } from 'react-icons/fa';
 
 import { PROJECTS } from '../constants';
 
@@ -9,14 +10,24 @@ export default function Projects() {
       id='projects'
     >
       <div className='px-2 md:px-10'>
-        <h2 className='capitalize text-2xl text-center mb-20'>projects</h2>
+        <motion.h2
+          whileInView={{ opacity: 1, y: 0 }}
+          initial={{ opacity: 0, y: -100 }}
+          transition={{ duration: 1.5 }}
+          className='capitalize text-2xl text-center mb-20'
+        >
+          projects
+        </motion.h2>
         <div>
           {PROJECTS.map((prj, idx) => {
             return (
               <div key={idx} className='flex flex-wrap mb-8 md:justify-center'>
                 <div className='w-full flex md:w-1/4'>
                   {prj.image && (
-                    <img
+                    <motion.img
+                      whileInView={{ opacity: 1, x: 0 }}
+                      initial={{ opacity: 0, x: -100 }}
+                      transition={{ duration: 0.5 }}
                       src={prj.image}
                       width={150}
                       height={150}
@@ -25,7 +36,12 @@ export default function Projects() {
                     />
                   )}
                 </div>
-                <div className='w-full max-w-xl md:w-3/4'>
+                <motion.div
+                  whileInView={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0, x: 100 }}
+                  transition={{ duration: 0.5 }}
+                  className='w-full max-w-xl md:w-3/4'
+                >
                   <h6 className='capitalize mb-1 font-semibold '>
                     {prj.title}
                   </h6>
@@ -36,7 +52,7 @@ export default function Projects() {
                       target='_blank'
                     >
                       GitHub
-                      <FaExternalLinkAlt className='w-3 h-3'/>
+                      <FaExternalLinkAlt className='w-3 h-3' />
                     </a>
                   )}
                   <p className='mb-4 text-gray-400'>{prj.description}</p>
@@ -52,7 +68,7 @@ export default function Projects() {
                       );
                     })}
                   </div>
-                </div>
+                </motion.div>
               </div>
             );
           })}
