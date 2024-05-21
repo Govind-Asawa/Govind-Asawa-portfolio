@@ -44,7 +44,7 @@ export default function About() {
                 <AboutItem tag='Address' value='Denton, Texas' />
                 <AboutItem tag='Languages' value='English, Hindi, Telugu' />
               </div>
-              <div className='flex justify-center sm:justify-start flex-wrap gap-4 mt-2 font-light'>
+              <div className='flex justify-center md:justify-start flex-wrap gap-4 mt-2 font-light'>
                 <div className='group p-[0.1rem] bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 rounded-full'>
                   <a
                     href='https://drive.google.com/file/d/1Boxp2r19OiWXlWwG-9mc0RvLz3X0eHH5/view?usp=drive_link'

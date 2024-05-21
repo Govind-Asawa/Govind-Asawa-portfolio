@@ -2,7 +2,10 @@ import { EXPERIENCES } from '../constants';
 
 export default function Experience() {
   return (
-    <section className='section-padding bg-black text-white border-b border-neutral-900' id='experience'>
+    <section
+      className='section-padding bg-black text-white border-b border-neutral-900'
+      id='experience'
+    >
       <div className='px-2 md:px-10'>
         <h2 className='capitalize text-2xl text-center mb-20'>Experience</h2>
         <div>
@@ -23,16 +26,18 @@ export default function Experience() {
                     </span>
                   </h6>
                   <p className='mb-4 text-gray-400'>{exp.description}</p>
-                  {exp.technologies.map((tech, i) => {
-                    return (
-                      <span
-                        key={i}
-                        className='capitalize mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800'
-                      >
-                        {tech}
-                      </span>
-                    );
-                  })}
+                  <div className='flex flex-wrap gap-1'>
+                    {exp.technologies.map((tech, i) => {
+                      return (
+                        <span
+                          key={i}
+                          className='capitalize rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800'
+                        >
+                          {tech}
+                        </span>
+                      );
+                    })}
+                  </div>
                 </div>
               </div>
             );
