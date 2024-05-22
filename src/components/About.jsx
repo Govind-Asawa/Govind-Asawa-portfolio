@@ -5,6 +5,7 @@ import AboutItem from './AboutItem';
 import SkillItem from './SkillItem';
 import aboutImg from '../assets/aboutImg.jpg';
 import { SKILLS } from '../constants';
+import { Link } from 'react-scroll';
 
 export default function About() {
   return (
@@ -77,10 +78,15 @@ export default function About() {
                     <p>view Resume</p>
                   </a>
                 </div>
-                <button className='group flex gap-2 w-fit cursor-pointer px-4 py-2 border-white-500 border rounded-full hover:bg-white hover:text-black hover:font-medium transition-all duration-100 ease-in-out '>
+                <Link
+                  smooth
+                  duration={500}
+                  to='contact'
+                  className='group flex gap-2 w-fit cursor-pointer px-4 py-2 border-white-500 border rounded-full hover:bg-white hover:text-black hover:font-medium transition-all duration-100 ease-in-out '
+                >
                   <span className='capitalize'>Let's Connect</span>
                   <IoIosArrowRoundForward className='w-6 h-6 group-hover:rotate-90 duration-100' />
-                </button>
+                </Link>
               </motion.div>
             </div>
           </div>

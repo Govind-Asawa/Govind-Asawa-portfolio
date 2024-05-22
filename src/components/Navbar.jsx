@@ -70,8 +70,10 @@ export default function Navbar() {
               <Link
                 key={i}
                 smooth
+                activeClass='text-white'
                 duration={500}
                 to={ele.id}
+                onClick={() => setNav((prevNav) => !prevNav)}
                 className='flex items-center justify-center px-2 w-full py-1 text-gray-400 hover:text-white transition-all ease-in-out duration-100 rounded-full cursor-pointer'
               >
                 {ele.name}

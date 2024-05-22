@@ -18,7 +18,7 @@ export default function Contact() {
               method='post'
               className=''
             >
-              <div className='flex flex-wrap gap-1 mb-2'>
+              <div className='flex gap-1 mb-2'>
                 <input
                   type='text'
                   name='name'
@@ -41,7 +41,7 @@ export default function Contact() {
                 name='message'
                 id='message'
                 cols='30'
-                rows='10'
+                rows='5'
                 placeholder='Message*'
               />
               <div className='flex justify-center mt-2'>
