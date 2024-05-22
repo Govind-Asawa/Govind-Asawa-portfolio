@@ -22,7 +22,7 @@ const links = [
   },
   {
     name: 'contact',
-    id: '#',
+    id: 'contact',
   },
 ];
 export default function Navbar() {
@@ -49,6 +49,13 @@ export default function Navbar() {
             </Link>
           );
         })}
+        <a
+          href='https://drive.google.com/file/d/1Boxp2r19OiWXlWwG-9mc0RvLz3X0eHH5/view?usp=drive_link'
+          target='_blank'
+          className='hover:text-white transition-all ease-in-out duration-100 cursor-pointer'
+        >
+          resume
+        </a>
       </div>
       <div
         onClick={() => setNav((prevNav) => !prevNav)}
@@ -71,6 +78,13 @@ export default function Navbar() {
               </Link>
             );
           })}
+          <a
+            href='https://drive.google.com/file/d/1Boxp2r19OiWXlWwG-9mc0RvLz3X0eHH5/view?usp=drive_link'
+            target='_blank'
+            className='flex items-center justify-center px-2 w-full py-1 text-gray-400 hover:text-white transition-all ease-in-out duration-100 rounded-full cursor-pointer'
+          >
+            resume
+          </a>
         </div>
       )}
     </div>
