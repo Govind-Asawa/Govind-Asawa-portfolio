@@ -10,7 +10,7 @@ export default function Contact() {
       <div className='px-2 md:px-10'>
         <div className='w-full'>
           <h2 className='capitalize text-2xl text-center mb-10'>
-            Contact form
+            Let's Connect
           </h2>
           <div className='flex justify-center mb-4 md:mb-8 text-neutral-900'>
             <form

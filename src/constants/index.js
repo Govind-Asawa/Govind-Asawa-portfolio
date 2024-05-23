@@ -75,7 +75,9 @@ export const EXPERIENCES = [
     role: 'Software Engineer',
     company: 'Opentext Technologies',
     location: 'India',
-    description: `Enhanced Content Hub for Publishers - a distributed web application by fixing 200+ bugs & adding 15+ new features over 2 years, contributing towards 133% revenue bump. `,
+    description: `Enhanced Content Hub for Publishers - a distributed web application by fixing 200+ bugs & adding 15+ new features over 2 years, 
+    contributing towards 133% revenue bump. Added ability to import assets from multiple vendors using Java, Javascript and third-party APIs, 
+    improving customer satisfaction by 15% (based on issue's priority).`,
     technologies: [
       'Javascript',
       'Java',
@@ -90,7 +92,9 @@ export const EXPERIENCES = [
     role: 'Associate Software engineer',
     company: 'Opentext Technologies',
     location: 'India',
-    description: `Worked closely with security and testing teams to ensure successfull product release & documentation.`,
+    description: `Worked closely with security and testing teams to ensure successful product release & documentation.
+    Resolved 30+ security vulnerabilities and led end-to-end implementation of password encryption feature using Bash and Java, 
+    strengthening password security by 70%. `,
     technologies: ['Javascript', 'Java', 'HTML/CSS', 'Shell scripting'],
   },
   {
