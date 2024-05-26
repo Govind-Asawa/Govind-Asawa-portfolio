@@ -70,7 +70,7 @@ export default function About() {
               >
                 <div className='group p-[0.1rem] bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 rounded-full'>
                   <a
-                    href='https://drive.google.com/file/d/1Boxp2r19OiWXlWwG-9mc0RvLz3X0eHH5/view?usp=drive_link'
+                    href='https://drive.google.com/file/d/1zF5y41VzvgSzU2ZLQFxt1mhRbHy6VShx/view?usp=sharing'
                     target='_blank'
                     className='flex items-center gap-1 px-4 py-2 rounded-full bg-black capitalize cursor-pointer'
                   >

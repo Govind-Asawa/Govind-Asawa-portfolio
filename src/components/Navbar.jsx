@@ -50,7 +50,7 @@ export default function Navbar() {
           );
         })}
         <a
-          href='https://drive.google.com/file/d/1oakqQe0X5ZXJh6242kJGOCrhWWlzgIa9/view?usp=sharing'
+          href='https://drive.google.com/file/d/1zF5y41VzvgSzU2ZLQFxt1mhRbHy6VShx/view?usp=sharing'
           target='_blank'
           className='hover:text-white transition-all ease-in-out duration-100 cursor-pointer'
         >
@@ -81,7 +81,7 @@ export default function Navbar() {
             );
           })}
           <a
-            href='https://drive.google.com/file/d/1oakqQe0X5ZXJh6242kJGOCrhWWlzgIa9/view?usp=sharing'
+            href='https://drive.google.com/file/d/1zF5y41VzvgSzU2ZLQFxt1mhRbHy6VShx/view?usp=sharing'
             target='_blank'
             className='flex items-center justify-center px-2 w-full py-1 text-gray-400 hover:text-white transition-all ease-in-out duration-100 rounded-full cursor-pointer'
           >
