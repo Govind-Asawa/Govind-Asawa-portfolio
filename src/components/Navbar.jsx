@@ -31,7 +31,9 @@ export default function Navbar() {
   return (
     <div className='flex justify-between items-center px-4 py-2 fixed text-white bg-black w-full h-20'>
       <div>
-        <h1 className='text-5xl font-signature ml-2'>Govind</h1>
+        <Link smooth duration={500} to='home' className='cursor-pointer'>
+          <h1 className='text-5xl font-signature ml-2'>Govind</h1>
+        </Link>
       </div>
       <div className='hidden md:flex gap-4 p-2 capitalize items-center text-gray-500 font-medium'>
         {links.map((ele, i) => {
