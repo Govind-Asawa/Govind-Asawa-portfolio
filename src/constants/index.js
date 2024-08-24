@@ -71,6 +71,22 @@ export const SKILLS = [
 
 export const EXPERIENCES = [
   {
+    year: 'Aug 2024 - Present',
+    role: 'Software Engineer Intern',
+    company: 'Copart Inc.',
+    location: 'Dallas, TX',
+    description: `Working on B2B seller integrations with majority of my work revolving around building 
+    APIs, extracting insights from metrics to understand peak times, expected range of interaction etc,
+    optimize DB retrieval time and others to mention a few `,
+    technologies: [
+      'Spring Boot',
+      'Spring Data JPA',
+      'Postgres/MariaDB',
+      'Java',
+      'REST API'
+    ]
+  },
+  {
     year: 'Oct 2022 - Aug 2023',
     role: 'Software Engineer',
     company: 'Opentext Technologies',
