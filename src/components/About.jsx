@@ -1,9 +1,11 @@
 import { IoIosArrowRoundForward } from 'react-icons/io';
-import { FaRegFilePdf } from 'react-icons/fa';
+import { PiEyeThin } from 'react-icons/pi';
+import { TfiDownload } from "react-icons/tfi";
 import { motion } from 'framer-motion';
 import AboutItem from './AboutItem';
 import SkillItem from './SkillItem';
 import aboutImg from '../assets/aboutImg.jpg';
+import resume from '../assets/Govind_Asawa_Resume.pdf';
 import { SKILLS } from '../constants';
 import { Link } from 'react-scroll';
 
@@ -22,7 +24,7 @@ export default function About() {
               transition={{ duration: 0.5 }}
               src={aboutImg}
               alt='about profile'
-              className='hidden md:flex md:w-1/5 md:h-1/5 rounded-md opacity-70'
+              className='hidden lg:flex lg:w-1/5 lg:h-1/5 rounded-md opacity-70'
             />
             <div className='flex flex-col gap-4 flex-1'>
               <motion.div
@@ -66,17 +68,26 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 initial={{ opacity: 0, y: 100 }}
                 transition={{ duration: 0.5 }}
-                className='flex justify-center md:justify-start flex-wrap gap-4 mt-2 font-light'
+                className='flex justify-center lg:justify-start flex-wrap gap-4 mt-2 font-light'
               >
-                <div className='group p-[0.1rem] bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 rounded-full'>
-                  <a
-                    href='https://drive.google.com/file/d/1yGcXzG3QKBVi1_yoEgqzIIBKZNB4P6HB/view?usp=sharing'
-                    target='_blank'
-                    className='flex items-center gap-1 px-4 py-2 rounded-full bg-black capitalize cursor-pointer'
-                  >
-                    <FaRegFilePdf className='w-5 h-5 group-hover:text-red-400 duration-100' />
-                    <p>view Resume</p>
-                  </a>
+                <div className='p-[0.1rem] bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 rounded-full'>
+                  <div className='flex items-center gap-1 px-4 py-2 rounded-full bg-black capitalize '>
+                    <a
+                      href='https://drive.google.com/file/d/1yGcXzG3QKBVi1_yoEgqzIIBKZNB4P6HB/view?usp=sharing'
+                      target='_blank'
+                      className='group rounded-full p-1 cursor-pointer hover:bg-white duration-100 transition-all ease-in-out'
+                    >
+                      <PiEyeThin className='w-5 h-5 group-hover:text-black duration-100' />
+                    </a>
+                    <p className='font-normal'>Resume</p>
+                    <a
+                      href={resume}
+                      download='GovindAsawa_Resume'
+                      className='group rounded-full p-1 cursor-pointer hover:bg-white duration-100 transition-all ease-in-out'
+                    >
+                      <TfiDownload className='w-4 h-4 group-hover:text-red-400 duration-100' />
+                    </a>
+                  </div>
                 </div>
                 <Link
                   smooth
@@ -84,7 +95,7 @@ export default function About() {
                   to='contact'
                   className='group flex gap-2 w-fit cursor-pointer px-4 py-2 border-white-500 border rounded-full hover:bg-white hover:text-black hover:font-medium transition-all duration-100 ease-in-out '
                 >
-                  <span className='capitalize'>Let's Connect</span>
+                  <span>Let's Connect</span>
                   <IoIosArrowRoundForward className='w-6 h-6 group-hover:rotate-90 duration-100' />
                 </Link>
               </motion.div>
