@@ -1,13 +1,13 @@
 import { IoIosArrowRoundForward } from 'react-icons/io';
 import { PiEyeThin } from 'react-icons/pi';
-import { TfiDownload } from "react-icons/tfi";
+import { TfiDownload } from 'react-icons/tfi';
 import { motion } from 'framer-motion';
 import AboutItem from './AboutItem';
-import SkillItem from './SkillItem';
 import aboutImg from '../assets/aboutImg.jpg';
 import resume from '../assets/Govind_Asawa_Resume.pdf';
 import { SKILLS } from '../constants';
 import { Link } from 'react-scroll';
+import SkillCard from './SkillCard';
 
 export default function About() {
   return (
@@ -102,16 +102,13 @@ export default function About() {
             </div>
           </div>
         </div>
-        <div className='mt-20 grid gap-2 grid-cols-1 grid-flow-row justify-items-start sm:grid-cols-2 md:grid-cols-3'>
-          {SKILLS.map((skill, i) => {
-            return (
-              <SkillItem
-                key={i}
-                skillname={skill.name}
-                percent={skill.percent}
-              />
-            );
-          })}
+        <div className='mt-20'>
+          <h2 className='capitalize text-2xl text-center mb-10'>Skills</h2>
+          <div className='grid gap-3 grid-cols-1 grid-flow-row sm:grid-cols-2 md:grid-cols-3'>
+            {SKILLS.map((skill, i) => {
+              return <SkillCard index={i} skill={skill} />;
+            })}
+          </div>
         </div>
       </div>
     </section>

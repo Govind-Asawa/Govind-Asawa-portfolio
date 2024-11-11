@@ -1,73 +1,43 @@
+import { IoCodeSlashOutline } from "react-icons/io5";
+import { CiServer } from "react-icons/ci";
+import { PiDatabaseThin } from "react-icons/pi";
+import { CiGrid42 } from "react-icons/ci";
+import { VscTools } from "react-icons/vsc";
+
 import eventique from '../assets/Eventique_project.png';
 import car_accident from '../assets/us_car_accident.png';
 import natours from '../assets/Natours.png';
 
+const skillIconClass = 'w-6 h-6 md:w-8 md:h-8'
+
 export const SKILLS = [
   {
-    name: 'Web Dev',
-    percent: '90',
+    category: 'languages',
+    icon: <IoCodeSlashOutline className={skillIconClass}/>,
+    values: ['java', 'python', 'javascript']
   },
   {
-    name: 'machine Learning',
-    percent: '80',
+    category: 'backend',
+    icon: <CiServer className={skillIconClass}/>,
+    values: ['spring boot', 'microservices', 'nodejs', 'expressjs', 'REST API', 'MVC']
   },
   {
-    name: 'Data Analytics',
-    percent: '75',
+    category: 'databases',
+    icon: <PiDatabaseThin className={skillIconClass}/>,
+    values: ['mySql', 'postgres', 'mongoDB', 'redis']
   },
   {
-    name: 'REST API',
-    percent: '85',
+    category: 'frontend',
+    icon: <CiGrid42 className={skillIconClass}/>,
+    values: ['reactjs','tailwind CSS', 'jquery', 'CSS3', 'html']
   },
   {
-    name: 'Databases',
-    percent: '80',
+    category: 'tools & methodologies',
+    icon: <VscTools className={skillIconClass}/>,
+    values: ['git', 'jira', 'agile', 'vscode', 'eclipse', 'postman']
   },
-  {
-    name: 'java',
-    percent: '90',
-  },
-  {
-    name: 'python',
-    percent: '85',
-  },
-  {
-    name: 'javascript',
-    percent: '80',
-  },
-  {
-    name: 'nodejs',
-    percent: '80',
-  },
-  {
-    name: 'expressjs',
-    percent: '85',
-  },
-  {
-    name: 'reactjs',
-    percent: '75',
-  },
-  {
-    name: 'tailwindCSS',
-    percent: '75',
-  },
-  {
-    name: 'SQL',
-    percent: '80',
-  },
-  {
-    name: 'mySql',
-    percent: '90',
-  },
-  {
-    name: 'mongoDB',
-    percent: '85',
-  },
-  {
-    name: 'AWS(S3,lambda)',
-    percent: '80',
-  },
-];
+  
+]
 
 export const EXPERIENCES = [
   {
