@@ -46,12 +46,13 @@ export const EXPERIENCES = [
     company: 'Copart Inc.',
     location: 'Dallas, TX',
     description: `Working on B2B seller integrations with majority of my work revolving around building 
-    APIs, extracting insights from metrics to understand peak times, expected range of interaction etc,
-    optimize DB retrieval time and others to mention a few `,
+    microservices, integrating forecasting models to reduce service level disagreements, optimizing redis storage, etc to mention a few`,
     technologies: [
+      'Microservices',
       'Spring Boot',
-      'Spring Data JPA',
       'Postgres/MariaDB',
+      'Machine learning',
+      'Python',
       'Java',
       'REST API'
     ]

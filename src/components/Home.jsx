@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-scroll';
 
-import { FaLinkedin, FaGithub, FaInstagram, FaQuora } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaQuora, FaMediumM } from 'react-icons/fa';
 import { RiArrowDownWideLine } from 'react-icons/ri';
 
 import heroImg from '../assets/heroImg_grayBG.png';
@@ -69,8 +69,8 @@ export default function Home() {
         <a href='https://github.com/Govind-Asawa' target='_blank'>
           <FaGithub className='w-6 h-6 md:w-8 md:h-8' />
         </a>
-        <a href='https://www.instagram.com/__govind_asawa__' target='_blank'>
-          <FaInstagram className='w-6 h-6 md:w-8 md:h-8' />
+        <a href='https://medium.com/@govindasawa23' target='_blank'>
+          <FaMediumM className='w-6 h-6 md:w-8 md:h-8' />
         </a>
         <a href='https://www.quora.com/profile/Govind-Asawa-4' target='_blank'>
           <FaQuora className='w-6 h-6 md:w-8 md:h-8' />

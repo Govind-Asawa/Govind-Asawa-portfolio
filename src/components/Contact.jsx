@@ -1,5 +1,5 @@
 import { TbSend } from 'react-icons/tb';
-import { FaLinkedin, FaGithub, FaInstagram, FaQuora } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaMediumM, FaQuora } from 'react-icons/fa';
 
 export default function Contact() {
   return (
@@ -58,15 +58,14 @@ export default function Contact() {
         </div>
       </div>
       <div className='flex justify-center items-center gap-2 mt-4'>
-        <p className='text-md md:text-lg text-gray-400'>My Socials: </p>
         <a href='https://www.linkedin.com/in/govind-asawa/' target='_blank'>
           <FaLinkedin className='w-6 h-6 md:w-8 md:h-8' />
         </a>
         <a href='https://github.com/Govind-Asawa' target='_blank'>
           <FaGithub className='w-6 h-6 md:w-8 md:h-8' />
         </a>
-        <a href='https://www.instagram.com/__govind_asawa__' target='_blank'>
-          <FaInstagram className='w-6 h-6 md:w-8 md:h-8' />
+        <a href='https://medium.com/@govindasawa23' target='_blank'>
+          <FaMediumM className='w-6 h-6 md:w-8 md:h-8' />
         </a>
         <a href='https://www.quora.com/profile/Govind-Asawa-4' target='_blank'>
           <FaQuora className='w-6 h-6 md:w-8 md:h-8' />
