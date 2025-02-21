@@ -10,6 +10,8 @@ import natours from '../assets/Natours.png';
 
 const skillIconClass = 'w-6 h-6 md:w-8 md:h-8'
 
+export const RESUME_LINK = 'https://drive.google.com/file/d/1CBEqLDTMfh8GdegGPXn8dL8E58ysyWTK/view?usp=sharing'
+
 export const SKILLS = [
   {
     category: 'languages',

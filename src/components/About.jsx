@@ -4,8 +4,8 @@ import { TfiDownload } from 'react-icons/tfi';
 import { motion } from 'framer-motion';
 import AboutItem from './AboutItem';
 import aboutImg from '../assets/aboutImg.jpg';
-import resume from '../assets/Govind_Asawa_Resume.pdf';
-import { SKILLS } from '../constants';
+import resume from '../assets/Resume_Govind_Asawa.pdf';
+import { SKILLS, RESUME_LINK } from '../constants';
 import { Link } from 'react-scroll';
 import SkillCard from './SkillCard';
 
@@ -73,7 +73,7 @@ export default function About() {
                 <div className='p-[0.1rem] bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 rounded-full'>
                   <div className='flex items-center gap-1 px-4 py-2 rounded-full bg-black capitalize '>
                     <a
-                      href='https://drive.google.com/file/d/1yGcXzG3QKBVi1_yoEgqzIIBKZNB4P6HB/view?usp=sharing'
+                      href={RESUME_LINK}
                       target='_blank'
                       className='group rounded-full p-1 cursor-pointer hover:bg-white duration-100 transition-all ease-in-out'
                     >
@@ -82,7 +82,7 @@ export default function About() {
                     <p className='font-normal'>Resume</p>
                     <a
                       href={resume}
-                      download='GovindAsawa_Resume'
+                      download='Resume_Govind_Asawa'
                       className='group rounded-full p-1 cursor-pointer hover:bg-white duration-100 transition-all ease-in-out'
                     >
                       <TfiDownload className='w-4 h-4 group-hover:text-red-400 duration-100' />
