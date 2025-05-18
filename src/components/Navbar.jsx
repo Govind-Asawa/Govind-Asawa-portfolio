@@ -14,12 +14,12 @@ const links = [
     id: 'about',
   },
   {
-    name: 'projects',
-    id: 'projects',
-  },
-  {
     name: 'experience',
     id: 'experience',
+  },
+  {
+    name: 'projects',
+    id: 'projects',
   },
   {
     name: 'contact',

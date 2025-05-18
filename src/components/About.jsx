@@ -4,7 +4,7 @@ import { TfiDownload } from 'react-icons/tfi';
 import { motion } from 'framer-motion';
 import AboutItem from './AboutItem';
 import aboutImg from '../assets/aboutImg.jpg';
-import resume from '../assets/Resume_Govind_Asawa.pdf';
+import resume from '../assets/Resume_Govind_Asawa_portfolio.pdf';
 import { SKILLS, RESUME_LINK } from '../constants';
 import { Link } from 'react-scroll';
 import SkillCard from './SkillCard';

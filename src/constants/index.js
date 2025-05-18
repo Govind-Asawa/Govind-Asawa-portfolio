@@ -10,40 +10,40 @@ import natours from '../assets/Natours.png';
 
 const skillIconClass = 'w-6 h-6 md:w-8 md:h-8'
 
-export const RESUME_LINK = 'https://drive.google.com/file/d/1CBEqLDTMfh8GdegGPXn8dL8E58ysyWTK/view?usp=sharing'
+export const RESUME_LINK = 'https://drive.google.com/file/d/1Epbx82cK-Zqy68Y3ycTI5bGv0gaLUiuk/view?usp=sharing'
 
 export const SKILLS = [
   {
     category: 'languages',
     icon: <IoCodeSlashOutline className={skillIconClass}/>,
-    values: ['java', 'python', 'javascript']
+    values: ['java', 'python', 'javascript', 'Bash', 'SQL' ]
   },
   {
     category: 'backend',
     icon: <CiServer className={skillIconClass}/>,
-    values: ['spring boot', 'microservices', 'nodejs', 'expressjs', 'REST API', 'MVC']
+    values: ['spring boot', 'Spring MVC', 'Hibernate', 'microservices', 'nodejs', 'expressjs', 'REST API']
   },
   {
     category: 'databases',
     icon: <PiDatabaseThin className={skillIconClass}/>,
-    values: ['mySql', 'postgres', 'mongoDB', 'redis']
+    values: ['mySql', 'postgres', 'mongoDB', 'redis', 'TimescaleDB']
+  },
+  {
+    category: 'tools & methodologies',
+    icon: <VscTools className={skillIconClass}/>,
+    values: ['git', 'jira', 'agile', 'vscode', 'eclipse', 'postman', 'Intellij', 'docker', 'AWS', 'CI/CD']
   },
   {
     category: 'frontend',
     icon: <CiGrid42 className={skillIconClass}/>,
     values: ['reactjs','tailwind CSS', 'jquery', 'CSS3', 'html']
   },
-  {
-    category: 'tools & methodologies',
-    icon: <VscTools className={skillIconClass}/>,
-    values: ['git', 'jira', 'agile', 'vscode', 'eclipse', 'postman']
-  },
   
 ]
 
 export const EXPERIENCES = [
   {
-    year: 'Aug 2024 - Present',
+    year: 'Aug 2024 - May 2025',
     role: 'Software Engineer Intern',
     company: 'Copart Inc.',
     location: 'Dallas, TX',
@@ -52,6 +52,7 @@ export const EXPERIENCES = [
     technologies: [
       'Microservices',
       'Spring Boot',
+      'Hibernate',
       'Postgres/MariaDB',
       'Machine learning',
       'Python',
@@ -92,7 +93,7 @@ export const EXPERIENCES = [
     company: 'Opentext Technologies',
     location: 'India',
     description: `Built a Java solution to parse an XML files and store relevant data as CSV, automating ~80% of the process.`,
-    technologies: ['Java'],
+    technologies: ['Java', 'SOLID', 'XML', 'CSV'],
   },
 ];
 
