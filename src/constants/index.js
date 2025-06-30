@@ -10,7 +10,7 @@ import natours from '../assets/Natours.png';
 
 const skillIconClass = 'w-6 h-6 md:w-8 md:h-8'
 
-export const RESUME_LINK = 'https://drive.google.com/file/d/1Epbx82cK-Zqy68Y3ycTI5bGv0gaLUiuk/view?usp=sharing'
+export const RESUME_LINK = 'https://drive.google.com/file/d/1Mx6P4K9i_WNymphuhjgZj6UsYcELXvn6/view?usp=sharing'
 
 export const SKILLS = [
   {
