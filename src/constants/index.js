@@ -21,7 +21,7 @@ export const SKILLS = [
   {
     category: 'backend',
     icon: <CiServer className={skillIconClass}/>,
-    values: ['spring boot', 'Spring MVC', 'Hibernate', 'microservices', 'nodejs', 'expressjs', 'REST API']
+    values: ['spring boot', 'Spring MVC', 'Hibernate', 'microservices', 'RabbitMq', 'REST API', 'nodejs', 'expressjs']
   },
   {
     category: 'databases',
@@ -43,21 +43,21 @@ export const SKILLS = [
 
 export const EXPERIENCES = [
   {
-    year: 'Aug 2024 - May 2025',
+    year: 'Aug 2024 - Present',
     role: 'Software Engineer Intern',
     company: 'Copart Inc.',
     location: 'Dallas, TX',
-    description: `Working on B2B seller integrations with majority of my work revolving around building 
-    microservices, integrating forecasting models to reduce service level disagreements, optimizing redis storage, etc to mention a few`,
+    description: `Contributing to Copart's B2B seller integrations by building scalable microservices, integrating forecasting 
+    models to minimize SLA breaches, optimizing Redis storage & improving inter-service communication using Apache Camel, to mention a few.`,
     technologies: [
       'Microservices',
+      'Apache Camel',
       'Spring Boot',
-      'Hibernate',
       'Postgres/MariaDB',
       'Machine learning',
       'Python',
       'Java',
-      'REST API'
+      'REST APIs'
     ]
   },
   {
@@ -65,36 +65,26 @@ export const EXPERIENCES = [
     role: 'Software Engineer',
     company: 'Opentext Technologies',
     location: 'India',
-    description: `Enhanced Content Hub for Publishers - a distributed web application by fixing 200+ bugs & adding 15+ new features over 2 years, 
-    contributing towards 133% revenue bump. Added ability to import assets from multiple vendors using Java, Javascript and third-party APIs, 
-    improving customer satisfaction by 15% (based on issue's priority).`,
+    description: `Enhanced Content Hub for Publishers by resolving 200+ issues and delivering 30+ features, contributing to 
+    $800K+ annual revenue. Improved fault tolerance of third-party API integrations using Resilience4j and added support for importing assets from multiple vendors.`,
     technologies: [
-      'Javascript',
       'Java',
-      'Solr',
+      'Spring Boot',
+      'Javascript',
       'AWS',
       'HTML/CSS',
       'Shell scripting',
     ],
   },
   {
-    year: 'Jan 2021 - Sept 2022',
+    year: 'Aug 2020 - Sept 2022',
     role: 'Associate Software engineer',
     company: 'Opentext Technologies',
     location: 'India',
-    description: `Worked closely with security and testing teams to ensure successful product release & documentation.
-    Resolved 30+ security vulnerabilities and led end-to-end implementation of password encryption feature using Bash and Java, 
-    strengthening password security by 70%. `,
-    technologies: ['Javascript', 'Java', 'HTML/CSS', 'Shell scripting'],
-  },
-  {
-    year: 'Oct 2020 - Dec 2020',
-    role: 'Software Engineer Intern',
-    company: 'Opentext Technologies',
-    location: 'India',
-    description: `Built a Java solution to parse an XML files and store relevant data as CSV, automating ~80% of the process.`,
-    technologies: ['Java', 'SOLID', 'XML', 'CSV'],
-  },
+    description: `Worked with security and QA teams to ensure smooth product releases. Resolved 30+ critical security issues and 
+    led end-to-end implementation of a password encryption mechanism, significantly strengthening user data protection.`,
+    technologies: ['Javascript', 'Java', 'Spring Boot', 'HTML/CSS', 'Shell scripting'],
+  }
 ];
 
 export const PROJECTS = [
